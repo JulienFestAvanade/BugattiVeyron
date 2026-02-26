@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bugatti Veyron — Fan site </title>
-  <meta name="description" content="A lightweight local fan website about a blue Bugatti Veyron: home + high-level technical brochure page." />
-  <link rel="stylesheet" href="assets/styles.css" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Bugatti Veyron (Blue) — Premium Fan Mini Site</title>
+  <meta name="description" content="A premium, shareable mini site about the blue Bugatti Veyron: home, brochure tech sheet, animated timeline, gallery, other models configurator, and video."/>
+  <link rel="stylesheet" href="assets/styles.css"/>
 </head>
 <body>
 
@@ -15,12 +15,16 @@
       <div class="badge">V</div>
       <div class="brandText">
         <div class="title">Bugatti Veyron</div>
-        <div class="subtitle">Mini site</div>
+        <div class="subtitle">Premium mini site — local & shareable</div>
       </div>
     </a>
     <nav class="links" aria-label="Main navigation">
       <a class="link" aria-current="page" href="index.html">Home</a>
       <a class="link" href="technical.html">Technical</a>
+      <a class="link" href="timeline.html">Timeline</a>
+      <a class="link" href="gallery.html">Gallery</a>
+      <a class="link" href="other-models.html">Other models</a>
+      <a class="link" href="video.html">Video</a>
       <a class="cta" href="technical.html#print">Download as PDF</a>
     </nav>
   </div>
@@ -29,32 +33,42 @@
 <main class="container">
   <section class="hero">
     <div class="heroGrid">
-      <div class="card heroCard">
-        <span class="kicker">Hypercar • W16 quad‑turbo • 1,001 hp (Veyron 16.4)</span>
+      <div class="card heroCard reveal" data-parallax="0.20">
+        <span class="kicker">Hypercar • 8.0L W16 quad‑turbo • 1,001 PS (Veyron 16.4)</span>
         <h1>Bugatti Veyron<br/>in deep blue</h1>
         <p class="lead">
-          A <b>simple</b>, <b>shareable</b> fan site designed like a small brochure: an overview and a readable high‑level tech sheet.
+          A <b>premium</b> static site you can zip, share and open locally — designed like a small brochure with tasteful motion.
         </p>
         <div class="btnRow">
-          <a class="btn btnPrimary" href="technical.html">View the tech sheet</a>
+          <a class="btn btnPrimary" href="technical.html">Open the tech brochure</a>
+          <a class="btn" href="timeline.html">Animated timeline</a>
+          <a class="btn" href="gallery.html">Magazine gallery</a>
         </div>
 
         <div class="pills" aria-label="Key figures">
-          <div class="pill">8.0L W16 • 4 turbos</div>
+          <div class="pill">W16 • 4 turbos</div>
           <div class="pill">0–100 km/h ~ 2.5 s*</div>
           <div class="pill">Top speed ~ 407 km/h*</div>
           <div class="pill">All‑wheel drive</div>
         </div>
-        <p class="lead" style="margin-top:14px; font-size:13px; color:var(--muted)">
-          * Indicative values that may vary by variant and conditions.
+        <p class="lead" style="margin-top:14px; font-size:13px">
+          * Indicative values for the Veyron 16.4; variants and conditions can change results.
         </p>
       </div>
 
-      <div class="card mediaCard">
+      <div class="card mediaCard reveal">
         <div class="mediaTop">
+          <div>
+            <div class="mediaTitle">Hero image</div>
+            <div class="mediaNote">Replace with your own photo (offline‑friendly)</div>
+          </div>
+          <div class="mediaNote">assets/</div>
         </div>
         <div class="figure">
-          <<img src="assets/VeyronBlue.png" class="responsive-img" />
+          <img src="assets/veyron-illustration.svg" alt="Stylized illustration of a blue Bugatti Veyron"/>
+        </div>
+        <div class="caption">
+          To use a real photo: drop <b>veyron.jpg</b> into <b>assets/</b> and change this &lt;img&gt; src. (See README.)
         </div>
       </div>
     </div>
@@ -62,32 +76,44 @@
 
   <section class="section">
     <div class="grid3">
-      <div class="card tile">
+      <div class="card tile reveal">
         <div class="icon">⚡</div>
-        <h3>Performance</h3>
-        <p>An extreme powertrain (W16 + 4 turbos) and a legendary road‑legal top speed.</p>
+        <h3>Brochure‑style tech</h3>
+        <p>High‑level spec blocks (powertrain, dynamics, design) — readable and printable as a PDF.</p>
       </div>
-      <div class="card tile">
-        <div class="icon">🧩</div>
-        <h3>Engineering</h3>
-        <p>Carbon monocoque, active aerodynamics, and cooling designed for sustained high output.</p>
+      <div class="card tile reveal">
+        <div class="icon">🗓️</div>
+        <h3>Animated timeline</h3>
+        <p>Scroll‑driven progress + reveal effects for the Veyron story (and the Bugatti legacy).</p>
       </div>
-      <div class="card tile">
-        <div class="icon">📎</div>
-        <h3>Easy sharing</h3>
-        <p>100% static: zip it, send it, and open it on any PC — even offline.</p>
+      <div class="card tile reveal">
+        <div class="icon">🧱</div>
+        <h3>Magazine gallery</h3>
+        <p>Masonry layout + filters (design / engine / interior / track) — works offline with your photos.</p>
       </div>
     </div>
   </section>
 
+  <section class="section">
+    <div class="card heroCard reveal">
+      <h2 style="margin:0 0 10px; font-size:24px">Community & links</h2>
+      <p class="lead" style="margin:0">
+        Quick jump to local clubs and a goodies page (external links open in a new tab).
+      </p>
+      
+<div class="hr"></div>
+<div class="specRow"><span>Clubs (Île‑de‑France)</span><b><a href="https://www.clubbugatti.fr/" target="_blank" rel="noopener">Club Bugatti France</a> • <a href="https://www.clubbugatti.fr/event-details/rallye-ile-de-france-2025" target="_blank" rel="noopener">Île‑de‑France Rally (event page)</a></b></div>
+<div class="specRow"><span>Shop (Amazon)</span><b><a href="https://www.amazon.fr/Bugatti-Porte-cl%C3%A9s-Accessoires/s?k=Bugatti&rh=n%3A2711340031" target="_blank" rel="noopener">Bugatti accessories & goodies</a></b></div>
+
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container" style="padding:0">
-      <small>© <span data-year></span> — Local fan mini site. Built to open with a double‑click. <a href="technical.html">Tech sheet</a></small>
+      <small>© <span data-year></span> — Premium local mini site. Start with <b>index.html</b>. External links: Club Bugatti France & Amazon.</small>
     </div>
   </footer>
 </main>
-
 <script src="assets/script.js"></script>
 </body>
 </html>

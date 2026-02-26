@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Bugatti — Other models configurator</title>
+  <meta name="description" content="Other Bugatti models presented in a configurator-like layout with simple option selection."/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <div class="badge">V</div>
+      <div class="brandText">
+        <div class="title">Bugatti Veyron</div>
+        <div class="subtitle">Premium mini site — local & shareable</div>
+      </div>
+    </a>
+    <nav class="links" aria-label="Main navigation">
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="technical.html">Technical</a>
+      <a class="link" href="timeline.html">Timeline</a>
+      <a class="link" href="gallery.html">Gallery</a>
+      <a class="link" aria-current="page" href="other-models.html">Other models</a>
+      <a class="link" href="video.html">Video</a>
+      <a class="cta" href="technical.html#print">Download as PDF</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="pageTitle reveal">
+    <h2>Other models — configurator style</h2>
+    <p>Select a model and options to get a “build summary”. (Prices are illustrative placeholders.)</p>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="cfgGrid" data-configurator>
+      <div class="card specCard reveal">
+        <h3>Build your Bugatti</h3>
+        <label for="cfgModel" style="display:block; color:var(--muted); margin:10px 0 6px">Model</label>
+        <select id="cfgModel" class="select">
+          <option>Chiron</option>
+          <option>Divo</option>
+          <option>Centodieci</option>
+          <option>Bolide</option>
+        </select>
+
+        <label for="cfgColor" style="display:block; color:var(--muted); margin:14px 0 6px">Color</label>
+        <select id="cfgColor" class="select">
+          <option>Deep Blue</option>
+          <option>Noir</option>
+          <option>Pearl White</option>
+          <option>French Racing Blue</option>
+        </select>
+
+        <label for="cfgWheels" style="display:block; color:var(--muted); margin:14px 0 6px">Wheels</label>
+        <select id="cfgWheels" class="select">
+          <option>Standard</option>
+          <option>Forged</option>
+          <option>Carbon</option>
+        </select>
+
+        <div class="hr"></div>
+        <div class="noteBox">
+          This is a UI demo (no backend). You can easily adapt it to your course exercise.
+        </div>
+        <div class="btnRow">
+          <a class="btn" href="gallery.html">Gallery</a>
+          <a class="btn" href="timeline.html">Timeline</a>
+          <a class="btn" href="index.html">Home</a>
+        </div>
+      </div>
+
+      <div class="card cfgPreview reveal">
+        <div class="previewBox">
+          <img id="cfgPreviewImg" src="assets/model-chiron.svg" alt="Selected model preview"/>
+          <div class="cfgSummary" id="cfgSummary">Chiron • Color: Deep Blue • Wheels: Standard</div>
+          <div class="price" id="cfgPrice">€3,000,000 (illustrative)</div>
+          <div class="noteBox" style="margin-top:12px">
+            You can replace these SVG previews with real photos: keep the file names and swap the assets.
+          </div>
+          
+<div class="hr"></div>
+<div class="specRow"><span>Clubs (Île‑de‑France)</span><b><a href="https://www.clubbugatti.fr/" target="_blank" rel="noopener">Club Bugatti France</a> • <a href="https://www.clubbugatti.fr/event-details/rallye-ile-de-france-2025" target="_blank" rel="noopener">Île‑de‑France Rally (event page)</a></b></div>
+<div class="specRow"><span>Shop (Amazon)</span><b><a href="https://www.amazon.fr/Bugatti-Porte-cl%C3%A9s-Accessoires/s?k=Bugatti&rh=n%3A2711340031" target="_blank" rel="noopener">Bugatti accessories & goodies</a></b></div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container" style="padding:0">
+      <small>© <span data-year></span> — Configurator page. Start with <b>index.html</b>.</small>
+    </div>
+  </footer>
+</main>
+<script src="assets/script.js"></script>
+</body>
+</html>

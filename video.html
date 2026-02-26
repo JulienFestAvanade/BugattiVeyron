@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Bugatti Veyron — Video</title>
+  <meta name="description" content="Video page: embed a Veyron-related video (works online)."/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <div class="badge">V</div>
+      <div class="brandText">
+        <div class="title">Bugatti Veyron</div>
+        <div class="subtitle">Premium mini site — local & shareable</div>
+      </div>
+    </a>
+    <nav class="links" aria-label="Main navigation">
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="technical.html">Technical</a>
+      <a class="link" href="timeline.html">Timeline</a>
+      <a class="link" href="gallery.html">Gallery</a>
+      <a class="link" href="other-models.html">Other models</a>
+      <a class="link" aria-current="page" href="video.html">Video</a>
+      <a class="cta" href="technical.html#print">Download as PDF</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="pageTitle reveal">
+    <h2>Video</h2>
+    <p>Embed a video (online). If you need fully offline video playback, put an MP4 into <b>assets/</b> and use the HTML5 &lt;video&gt; tag.</p>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="specGrid">
+      <div class="card specCard reveal">
+        <h3>Embedded video (YouTube)</h3>
+        <div class="videoFrame">
+          <iframe src="https://www.youtube-nocookie.com/embed/tijdbZFIHyQ" title="Club Bugatti France video (YouTube)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="lead" style="margin-top:12px; font-size:13px">
+          This uses YouTube’s privacy-enhanced domain (nocookie). Requires internet access.
+        </p>
+      </div>
+
+      <div class="card specCard reveal">
+        <h3>Offline option</h3>
+        <p class="lead" style="margin:0 0 10px">
+          If you want the video to work offline:
+        </p>
+        <div class="specRow"><span>Step 1</span><b>Put <code>my-video.mp4</code> in <code>assets/</code></b></div>
+        <div class="specRow"><span>Step 2</span><b>Replace the iframe with:</b></div>
+        <div class="noteBox">
+<pre style="margin:0; white-space:pre-wrap; color:var(--text)">&lt;video controls style="width:100%; border-radius:18px;"&gt;
+  &lt;source src="assets/my-video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</pre>
+        </div>
+        
+<div class="hr"></div>
+<div class="specRow"><span>Clubs (Île‑de‑France)</span><b><a href="https://www.clubbugatti.fr/" target="_blank" rel="noopener">Club Bugatti France</a> • <a href="https://www.clubbugatti.fr/event-details/rallye-ile-de-france-2025" target="_blank" rel="noopener">Île‑de‑France Rally (event page)</a></b></div>
+<div class="specRow"><span>Shop (Amazon)</span><b><a href="https://www.amazon.fr/Bugatti-Porte-cl%C3%A9s-Accessoires/s?k=Bugatti&rh=n%3A2711340031" target="_blank" rel="noopener">Bugatti accessories & goodies</a></b></div>
+
+        <div class="btnRow">
+          <a class="btn btnPrimary" href="index.html">Home</a>
+          <a class="btn" href="gallery.html">Gallery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container" style="padding:0">
+      <small>© <span data-year></span> — Video page. Start with <b>index.html</b>.</small>
+    </div>
+  </footer>
+</main>
+<script src="assets/script.js"></script>
+</body>
+</html>

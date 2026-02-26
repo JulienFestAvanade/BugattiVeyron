@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Bugatti Veyron — Gallery (masonry + filters)</title>
+  <meta name="description" content="Magazine-style masonry gallery with filters. Offline-friendly placeholders you can replace with real photos."/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <div class="badge">V</div>
+      <div class="brandText">
+        <div class="title">Bugatti Veyron</div>
+        <div class="subtitle">Premium mini site — local & shareable</div>
+      </div>
+    </a>
+    <nav class="links" aria-label="Main navigation">
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="technical.html">Technical</a>
+      <a class="link" href="timeline.html">Timeline</a>
+      <a class="link" aria-current="page" href="gallery.html">Gallery</a>
+      <a class="link" href="other-models.html">Other models</a>
+      <a class="link" href="video.html">Video</a>
+      <a class="cta" href="technical.html#print">Download as PDF</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="pageTitle reveal">
+    <h2>Gallery — magazine layout</h2>
+    <p>Masonry layout (CSS columns) + quick filters. Replace placeholders with your own photos in <b>assets/</b>.</p>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="filterRow reveal" role="toolbar" aria-label="Gallery filters">
+      <button class="chip" aria-pressed="true" data-filter="all">All</button>
+      <button class="chip" aria-pressed="false" data-filter="design">Design</button>
+      <button class="chip" aria-pressed="false" data-filter="engine">Engine</button>
+      <button class="chip" aria-pressed="false" data-filter="interior">Interior</button>
+      <button class="chip" aria-pressed="false" data-filter="track">Track</button>
+    </div>
+
+    <div class="gallery">
+      <div class="gItem reveal" data-tags="design">
+        <div class="card gCard">
+          <img class="gImg" src="assets/gallery-01.svg" alt="Design shot placeholder"/>
+          <div class="gBody">
+            <h4>Curves & stance</h4>
+            <p>Clean volumes with purposeful intakes. Classic “blue” mood.</p>
+            <div class="tag">Tag: design</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gItem reveal" data-tags="engine">
+        <div class="card gCard">
+          <img class="gImg" src="assets/gallery-02.svg" alt="Engine placeholder"/>
+          <div class="gBody">
+            <h4>W16 architecture</h4>
+            <p>Power delivery requires serious cooling and packaging discipline.</p>
+            <div class="tag">Tag: engine</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gItem reveal" data-tags="interior">
+        <div class="card gCard">
+          <img class="gImg" src="assets/gallery-03.svg" alt="Interior placeholder"/>
+          <div class="gBody">
+            <h4>Grand touring cabin</h4>
+            <p>Hypercar performance paired with premium materials and comfort.</p>
+            <div class="tag">Tag: interior</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gItem reveal" data-tags="track">
+        <div class="card gCard">
+          <img class="gImg" src="assets/gallery-04.svg" alt="Track placeholder"/>
+          <div class="gBody">
+            <h4>High‑speed stability</h4>
+            <p>Active aero helps keep the car composed when the numbers get wild.</p>
+            <div class="tag">Tag: track</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gItem reveal" data-tags="design,interior">
+        <div class="card gCard">
+          <img class="gImg" src="assets/gallery-05.svg" alt="Design + interior placeholder"/>
+          <div class="gBody">
+            <h4>Detail shots</h4>
+            <p>Magazine-style crop ideas: wheels, stitching, vents, badges.</p>
+            <div class="tag">Tags: design, interior</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gItem reveal" data-tags="engine,track">
+        <div class="card gCard">
+          <img class="gImg" src="assets/gallery-06.svg" alt="Engine + track placeholder"/>
+          <div class="gBody">
+            <h4>Cooling & airflow</h4>
+            <p>Thermal management is a headline feature at sustained high output.</p>
+            <div class="tag">Tags: engine, track</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card heroCard reveal" style="margin-top:18px">
+      <h2 style="margin:0 0 10px; font-size:24px">How to add your own photos</h2>
+      <p class="lead" style="margin:0 0 12px">
+        Put images into <b>assets/</b> and replace the <code>src</code> attributes above (e.g., <code>assets/my-photo.jpg</code>).
+        Keep file names simple (no spaces).
+      </p>
+      <div class="btnRow">
+        <a class="btn btnPrimary" href="index.html">Back to Home</a>
+        <a class="btn" href="other-models.html">Configurator page</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container" style="padding:0">
+      <small>© <span data-year></span> — Gallery page. Start with <b>index.html</b>.</small>
+    </div>
+  </footer>
+</main>
+<script src="assets/script.js"></script>
+</body>
+</html>

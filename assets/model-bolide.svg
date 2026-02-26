@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 980 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bolide silhouette">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00D1FF" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00D1FF" stop-opacity=".85"/>
+    </linearGradient>
+  </defs>
+  <path d="M120 270 C190 220, 310 190, 500 192
+           C640 194, 760 220, 860 272
+           C842 302, 796 322, 732 330
+           L250 330
+           C190 324, 145 302, 120 270 Z"
+        fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+  <path d="M300 255 C350 210, 420 202, 500 204
+           C585 206, 650 226, 690 258
+           C620 252, 545 250, 468 252
+           C405 254, 345 255, 300 255 Z"
+        fill="url(#g)" opacity=".35" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+  <circle cx="285" cy="330" r="52" fill="#070A14" stroke="rgba(255,255,255,.20)" stroke-width="2"/>
+  <circle cx="705" cy="330" r="52" fill="#070A14" stroke="rgba(255,255,255,.20)" stroke-width="2"/>
+  <circle cx="285" cy="330" r="26" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+  <circle cx="705" cy="330" r="26" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+  <text x="38" y="72" fill="rgba(255,255,255,.18)" font-size="34" font-family="ui-sans-serif, system-ui" font-weight="800">Bolide</text>
+</svg>

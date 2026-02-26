@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Bugatti Veyron — Animated timeline</title>
+  <meta name="description" content="Animated timeline of the Bugatti Veyron story, with scroll progress and reveal animations."/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <div class="badge">V</div>
+      <div class="brandText">
+        <div class="title">Bugatti Veyron</div>
+        <div class="subtitle">Premium mini site — local & shareable</div>
+      </div>
+    </a>
+    <nav class="links" aria-label="Main navigation">
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="technical.html">Technical</a>
+      <a class="link" aria-current="page" href="timeline.html">Timeline</a>
+      <a class="link" href="gallery.html">Gallery</a>
+      <a class="link" href="other-models.html">Other models</a>
+      <a class="link" href="video.html">Video</a>
+      <a class="cta" href="technical.html#print">Download as PDF</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="pageTitle reveal">
+    <h2>Animated timeline</h2>
+    <p>Scroll down — the progress line fills as you read. (High level, “story” format.)</p>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="specGrid">
+      <div class="card specCard reveal">
+        <h3>The Veyron story</h3>
+        <div class="timeline" data-timeline>
+          <div class="progressLine"></div>
+
+          <div class="tItem reveal">
+            <h4>Ambition: a 400+ km/h road car</h4>
+            <p>Engineering targets included stability, cooling and drivability at extreme speed.</p>
+          </div>
+
+          <div class="tItem reveal">
+            <h4>W16 + quad‑turbo architecture</h4>
+            <p>Power at scale required major thermal management and robust drivetrain solutions.</p>
+          </div>
+
+          <div class="tItem reveal">
+            <h4>Active aerodynamics</h4>
+            <p>Ride height changes and an active rear wing support grip and stability.</p>
+          </div>
+
+          <div class="tItem reveal">
+            <h4>Benchmark era</h4>
+            <p>The Veyron became a reference point for what “road‑legal hypercar” could mean.</p>
+          </div>
+
+          <div class="tItem reveal">
+            <h4>Variants refine the formula</h4>
+            <p>Roadster and higher‑output versions expand the range while preserving the core identity.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card specCard reveal">
+        <h3>Bugatti legacy (very short)</h3>
+        <div class="timeline" data-timeline>
+          <div class="progressLine"></div>
+
+          <div class="tItem reveal">
+            <h4>Molsheim roots</h4>
+            <p>Bugatti’s heritage is strongly tied to craftsmanship and engineering character.</p>
+          </div>
+
+          <div class="tItem reveal">
+            <h4>Iconic classics</h4>
+            <p>Historic models shaped the brand’s image of elegance and performance.</p>
+          </div>
+
+          <div class="tItem reveal">
+            <h4>Modern hypercar chapter</h4>
+            <p>Veyron then Chiron: pushing limits with usable road manners and premium finishes.</p>
+          </div>
+        </div>
+
+        <div class="noteBox" style="margin-top:14px">
+          Want a factual, date‑accurate timeline? Tell me if you want it focused on the brand, or on the Veyron generation list — I can rewrite it as a real chronology.
+        </div>
+      </div>
+
+      <div class="card specCard reveal">
+        <h3>Next steps</h3>
+        <p class="lead" style="margin:0 0 12px">
+          Keep exploring the site:
+        </p>
+        <div class="btnRow">
+          <a class="btn btnPrimary" href="gallery.html">Open the gallery</a>
+          <a class="btn" href="other-models.html">Other models configurator</a>
+          <a class="btn" href="technical.html">Tech brochure</a>
+        </div>
+        
+<div class="hr"></div>
+<div class="specRow"><span>Clubs (Île‑de‑France)</span><b><a href="https://www.clubbugatti.fr/" target="_blank" rel="noopener">Club Bugatti France</a> • <a href="https://www.clubbugatti.fr/event-details/rallye-ile-de-france-2025" target="_blank" rel="noopener">Île‑de‑France Rally (event page)</a></b></div>
+<div class="specRow"><span>Shop (Amazon)</span><b><a href="https://www.amazon.fr/Bugatti-Porte-cl%C3%A9s-Accessoires/s?k=Bugatti&rh=n%3A2711340031" target="_blank" rel="noopener">Bugatti accessories & goodies</a></b></div>
+
+      </div>
+
+      <div class="card specCard reveal">
+        <h3>Animation notes</h3>
+        <p class="lead" style="margin:0 0 12px">
+          The timeline uses pure CSS + a tiny scroll listener (no libraries), so it runs locally and stays lightweight.
+        </p>
+        <div class="specRow"><span>Reveal</span><b>IntersectionObserver</b></div>
+        <div class="specRow"><span>Progress line</span><b>Scroll-based fill</b></div>
+        <div class="specRow"><span>Parallax</span><b>Subtle background shift</b></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container" style="padding:0">
+      <small>© <span data-year></span> — Timeline page. Start with <b>index.html</b>.</small>
+    </div>
+  </footer>
+</main>
+<script src="assets/script.js"></script>
+</body>
+</html>
