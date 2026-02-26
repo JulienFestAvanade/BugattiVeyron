@@ -5,13 +5,9 @@ nav a{color:#4da3ff;margin:0 10px;text-decoration:none}
 .hero img{max-width:80%;border-radius:12px}
 .content{padding:40px}
 footer{text-align:center;padding:20px;background:#000}
-.responsive-img {
-  max-width: 50%;
-  height: auto;
-}
-.figure img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 16px;
+.figure img{
+  width:100%;
+  height:auto;
+  border-radius:16px;
+  display:block;
 }
