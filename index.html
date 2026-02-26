@@ -1,20 +1,114 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Bugatti Veyron – Accueil</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bugatti Veyron — Fan site (local)</title>
+  <meta name="description" content="A lightweight local fan website about a blue Bugatti Veyron: home + high-level technical brochure page." />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+
 <header>
-<h1>Bugatti Veyron</h1>
-<nav><a href="index.html">Accueil</a> | <a href="technique.html">Fiche technique</a></nav>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <div class="badge">V</div>
+      <div class="brandText">
+        <div class="title">Bugatti Veyron</div>
+        <div class="subtitle">Mini site — local version</div>
+      </div>
+    </a>
+    <nav class="links" aria-label="Main navigation">
+      <a class="link" aria-current="page" href="index.html">Home</a>
+      <a class="link" href="technical.html">Technical</a>
+      <a class="cta" href="technical.html#print">Download as PDF</a>
+    </nav>
+  </div>
 </header>
-<section class="hero">
-<img src="assets/veyron.jpg" alt="Bugatti Veyron Bleue">
-<h2>La quintessence de l'hypercar</h2>
-<p>Puissance, luxe et ingénierie sans compromis.</p>
-</section>
-<footer>© Bugatti – Site de démonstration</footer>
+
+<main class="container">
+  <section class="hero">
+    <div class="heroGrid">
+      <div class="card heroCard">
+        <span class="kicker">Hypercar • W16 quad‑turbo • 1,001 hp (Veyron 16.4)</span>
+        <h1>Bugatti Veyron<br/>in deep blue</h1>
+        <p class="lead">
+          A <b>simple</b>, <b>shareable</b> fan site designed like a small brochure: an overview and a readable high‑level tech sheet.
+        </p>
+        <div class="btnRow">
+          <a class="btn btnPrimary" href="technical.html">View the tech sheet</a>
+          <a class="btn" href="#about">About</a>
+        </div>
+
+        <div class="pills" aria-label="Key figures">
+          <div class="pill">8.0L W16 • 4 turbos</div>
+          <div class="pill">0–100 km/h ~ 2.5 s*</div>
+          <div class="pill">Top speed ~ 407 km/h*</div>
+          <div class="pill">All‑wheel drive</div>
+        </div>
+        <p class="lead" style="margin-top:14px; font-size:13px; color:var(--muted)">
+          * Indicative values that may vary by variant and conditions.
+        </p>
+      </div>
+
+      <div class="card mediaCard">
+        <div class="mediaTop">
+          <div>
+            <div class="mediaTitle">Visual (illustration)</div>
+            <div class="mediaNote">Color: “blue” — poster style</div>
+          </div>
+          <div class="mediaNote">Local file: SVG</div>
+        </div>
+        <div class="figure">
+          <img src="assets/veyron-illustration.svg" alt="Stylized illustration of a blue hypercar" />
+        </div>
+        <div class="caption">
+          Tip: you can replace the illustration with a photo (drop an image into <b>assets/</b> and update the &lt;img&gt; tag).
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid3">
+      <div class="card tile">
+        <div class="icon">⚡</div>
+        <h3>Performance</h3>
+        <p>An extreme powertrain (W16 + 4 turbos) and a legendary road‑legal top speed.</p>
+      </div>
+      <div class="card tile">
+        <div class="icon">🧩</div>
+        <h3>Engineering</h3>
+        <p>Carbon monocoque, active aerodynamics, and cooling designed for sustained high output.</p>
+      </div>
+      <div class="card tile">
+        <div class="icon">📎</div>
+        <h3>Easy sharing</h3>
+        <p>100% static: zip it, send it, and open it on any PC — even offline.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="card heroCard">
+      <h2 style="margin:0 0 10px; font-size:24px">About this mini site</h2>
+      <p class="lead" style="margin:0">
+        This site is intentionally <b>lightweight</b> and <b>local</b> (HTML/CSS/JS).  
+        It avoids official logos and third‑party photos to keep it easy to share.
+      </p>
+      <div class="btnRow" style="margin-top:18px">
+        <a class="btn" href="technical.html">Open the tech sheet</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container" style="padding:0">
+      <small>© <span data-year></span> — Local fan mini site. Built to open with a double‑click. <a href="technical.html">Tech sheet</a></small>
+    </div>
+  </footer>
+</main>
+
+<script src="assets/script.js"></script>
 </body>
 </html>

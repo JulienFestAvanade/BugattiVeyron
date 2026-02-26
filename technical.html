@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bugatti Veyron — Technical sheet (high level)</title>
+  <meta name="description" content="High-level technical brochure page for the Bugatti Veyron." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    @media print {
+      header, .btnRow, .footer { display:none !important; }
+      body { background:#fff; color:#000; }
+      .card { box-shadow:none; border-color:#ddd; }
+      .specRow { border-top:1px solid #ddd; }
+      a { text-decoration:none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <div class="badge">V</div>
+      <div class="brandText">
+        <div class="title">Bugatti Veyron</div>
+        <div class="subtitle">Mini site — local version</div>
+      </div>
+    </a>
+    <nav class="links" aria-label="Main navigation">
+      <a class="link" href="index.html">Home</a>
+      <a class="link" aria-current="page" href="technical.html">Technical</a>
+      <a class="cta" href="technical.html#print">Download as PDF</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="pageTitle">
+    <h2>Technical sheet — Bugatti Veyron (blue)</h2>
+    <p>“Brochure” format: high‑level details that stay readable without diving into every sub‑variant.</p>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="specGrid">
+      <div class="card specCard">
+        <h3>Powertrain</h3>
+        <div class="specRow"><span>Engine</span><b>W16 — 8.0 L</b></div>
+        <div class="specRow"><span>Induction</span><b>Quad‑turbo</b></div>
+        <div class="specRow"><span>Power (indicative)</span><b>≈ 1,001 hp (16.4)</b></div>
+        <div class="specRow"><span>Torque (indicative)</span><b>≈ 1,250 Nm</b></div>
+        <div class="specRow"><span>Drivetrain</span><b>All‑wheel drive (AWD)</b></div>
+        <div class="specRow"><span>Gearbox</span><b>7‑speed dual‑clutch</b></div>
+        <div class="noteBox" style="margin-top:14px">
+          Figures vary across versions (e.g., Super Sport). This page aims for a clear, public‑friendly brochure view.
+        </div>
+      </div>
+
+      <div class="card specCard">
+        <h3>Performance & dynamics</h3>
+        <div class="specRow"><span>0–100 km/h</span><b>≈ 2.5 s*</b></div>
+        <div class="specRow"><span>Top speed</span><b>≈ 407 km/h*</b></div>
+        <div class="specRow"><span>Aerodynamics</span><b>Active (wing / ride height)</b></div>
+        <div class="specRow"><span>Layout</span><b>Mid‑engine • carbon chassis</b></div>
+        <div class="specRow"><span>Braking</span><b>High‑performance ventilated</b></div>
+        <div class="noteBox" style="margin-top:14px">
+          * Commonly cited values for the Veyron 16.4; real results depend on conditions (temperature, surface, tires, setup).
+        </div>
+      </div>
+
+      <div class="card specCard">
+        <h3>Design & cabin</h3>
+        <div class="specRow"><span>Signature</span><b>Curves + side intakes</b></div>
+        <div class="specRow"><span>Materials</span><b>Carbon, aluminum, leather</b></div>
+        <div class="specRow"><span>Atmosphere</span><b>Grand touring, premium finishes</b></div>
+        <div class="specRow"><span>Color (this site)</span><b>Deep blue</b></div>
+        <div class="specRow"><span>Use case</span><b>Road hypercar + track capable</b></div>
+      </div>
+
+      <div class="card specCard">
+        <h3>Print / share</h3>
+        <p class="lead" style="margin:0 0 12px">
+          You can export this page to PDF using your browser’s print dialog.
+        </p>
+        <div class="btnRow">
+          <button class="btn btnPrimary" onclick="window.print()" id="print">Print / Save as PDF</button>
+          <a class="btn" href="index.html">Back to Home</a>
+        </div>
+        <p class="lead" style="margin-top:12px; font-size:13px">
+          Shortcut: <kbd>Ctrl</kbd> + <kbd>P</kbd> (or <kbd>⌘</kbd> + <kbd>P</kbd>)
+        </p>
+        <div class="noteBox" data-print-hint style="opacity:0; transition:opacity .25s">
+          Tip: choose “Save as PDF” in the print dialog.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container" style="padding:0">
+      <small>© <span data-year></span> — Local fan mini site. Open <b>index.html</b> to start.</small>
+    </div>
+  </footer>
+</main>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
